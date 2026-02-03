@@ -132,5 +132,3 @@ Terraform follows a simple workflow:
 7. Verification
 
 Loom link: https://www.loom.com/share/4f0afb57699b4062b792daed56009f9a
-
-
