@@ -43,10 +43,6 @@ Command to create a key-pair:
 
 ssh-keygen -f <file-name>
 
-<file-name> = for which file you want to create
-
-for ex: ssh-keygen -f user23
-
 Run in Git Bash which is the one i recommend.
 
 ## 7. SSH (Secure Shell):
@@ -55,11 +51,7 @@ SSh is a secure way to connect into your EC2 server from your own computer using
 Command to connect the instance:
 ssh -i <private-key> ec2-user@<Public-IP>
 
-<private-key> = is the 
-ec2-user = is the default user
-<public-ip> = It is the public ip address of your EC2 Instance.
-
-## 8. Security Group
+## 8. Security Group:
 
 A Security Group works like a firewall for EC2. It controls which traffic is allowed in and out of the instance. 
 That in and out we call in techincal terms as Inbound rules and Outbound rules.
@@ -100,33 +92,36 @@ By default, AWS uses a default VPC, but when you create you own will show real-w
 Terraform is a tool that lets you create and manage cloud infrastructure using code instead of creating resources manually in the AWS Console.
 
 We also call it as Infrastructure as a code.
+
+## 1. IaC:
+
 Infrastructure as Code means managing cloud resources using configuration files.
 
-## Provider:
+## 2. Provider:
 
 Provider tells Terraform which cloud platform to use.
 
-## Resource:
+## 3. Resource:
 
 A Resource represents a cloud component that terraform creates, such as ec2 instance, security group, s3 bucket
 
-## Configuration files(.tf):
+## 4. Configuration files(.tf):
 
 Terraform uses files with the .tf extension to define infrastructure.
 
-## Terraform State:
+## 5. Terraform State:
 
 Terraform keeps track of created resources using a state file.
 This helps terraform understand what already exists and what needs to be changed.
 
-## Terraform Workflow:
+## 6. Terraform Workflow:
 
 Terraform follows a simple workflow:
 - Initialize (terraform init)
 - Plan (terraform plan)
 - Apply (terraform apply)
 
-### EC2 Provisioning Using Terraform
+### 7. EC2 Provisioning Using Terraform
 
 1. Create Project Directory
 2. Provider Configuration
